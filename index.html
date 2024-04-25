@@ -1,11 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title> Temperature Converter</title>
 </head>
+
 <body>
+    <main>
+        <header class="main-title">
+            <h1 style="font-family: Arial, Helvetica, sans-serif;">Temperature Converter by Ibnu</h1>
+        </header>
+
+        <section class=" main-section-introduction">
+            <!-- Section Introduction -->
+            <section>
+                <p> Masukan Nilai Suhu (&deg;C)</p>
+
+            </section>
+
+
+            <div id="c-to-f">
+                <section class="section-celcius">
+                    <h2>Celcius (&deg;C)</h2>
+                    <article>
+                        <input type="number" id="celcius"
+                            style="width:400px; height:30px;resize: none;
+                border:2px solid greenyellow;border-radius: 4px; font-size: 25px ; font-family: 'Times New Roman', Times, serif;"></input>
+                        <div class="container-button">
+                            <button id="button-convert" onclick="convert_c_to_f()">Convert</button>
+                            <button id="button-reset" onclick="reset()">Reset</button>
+                            <button id="button-reverse" onclick="reverse()">Reverse</button>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="section-fahrenheit">
+                    <h2>Fahrenheit (&deg;C)</h2>
+                    <article>
+                        <input type="number" id="fahrenheit"
+                            style="width:400px; height:30px;resize: none;
+                border:2px solid greenyellow;border-radius: 4px; font-size: 25px ; font-family: 'Times New Roman', Times, serif;" disabled></input>
+                    </article>
+                </section>
+            </div>
+
+            <div>
+                <div id="f-to-c">
+                    <section class="section-fahrenheit">
+                        <h2>Fahrenheit (&deg;C)</h2>
+                        <article>
+                            <input type="number" id="fahrenheit2"
+                                style="width:400px; height:30px;resize: none;
+                    border:2px solid greenyellow;border-radius: 4px; font-size: 25px ; font-family: 'Times New Roman', Times, serif;" ></input>
+                        </article>
+                    </section>
+                    
+                    <section class="section-celcius">
+                        <h2>Celcius (&deg;C)</h2>
+                        <article>
+                            <input type="number" id="celcius2"
+                                style="width:400px; height:30px;resize: none;
+                    border:2px solid greenyellow;border-radius: 4px; font-size: 25px ; font-family: 'Times New Roman', Times, serif;" disabled></input>
+                            <div class="container-button">
+                                <button id="button-convert" onclick="convert_f_to_c()">Convert</button>
+                                <button id="button-reset" onclick="reset()">Reset</button>
+                                <button id="button-reverse" onclick="reverse()">Reverse</button>
+                            </div>
+                        </article>
+                    </section>
     
+                    
+                </div>
+            </div>
+
+
+            <section class="section-result">
+                <h2>Cara Kalkulasi:</h2>
+                <article>
+                    <textarea id="rumus-celcius-fahrenheit" ; rows="6"
+                        style="width:400px; height:30px;resize: none;
+                border:2px solid greenyellow;border-radius: 4px;font-size: 25px; font-family: 'Times New Roman', Times, serif;" disabled></textarea>
+
+                </article>
+            </section>
+
+            <section class="section-explanation">
+                <hr>
+                <h2>Cara Konversi dari (&deg;C)ke (&deg;F):</h2>
+                <article>
+
+                    <h1 class="formula-s">
+                        <h1>
+                            <sub2>Suhu</sub2><i> S</i>
+                            <sub2>dalam derajat Fahrenheit (&deg;F) sama dengan suhu <i>S</i> dalam derajat</sub2>
+                        </h1>
+                        <h1>
+                            <sub2>Celcius (&deg;C) kali 9/5 tambah 32</sub2>
+                        </h1>
+                        <i>S</i><sub>(&deg;F)</sub>
+                        = (<i>S</i><sub>(&deg;C)</sub>
+                        <sub2>x 9/5)</sub2>
+                    </h1>
+                    <h1 class="formula-s">
+                        <sub2>atau</sub2>
+                    </h1>
+                    <h1 class="formula-s">S<sub>(&deg;F)</sub>
+                        = (S<sub>(&deg;C)</sub>
+                        <sub2>x 1,8)</sub2>
+                    </h1>
+                </article>
+            </section>
+        </section>
+        <script src="js/script.js"></script>
+    </main>
 </body>
+
 </html>
