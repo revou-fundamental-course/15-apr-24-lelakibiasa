@@ -1,1 +1,83 @@
 /* File Css */
+
+main {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.main-title{
+    text-align: left;
+}
+
+.main-section-introduction{
+    padding: 16px;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.section-celcius{
+    padding-top: 0px;
+}
+
+.section-fahrenheit{
+    padding-top: 16px;
+}
+
+.section-result{
+    padding-top: 16px;
+}
+
+.section-explanation{
+    padding-top: 16px;
+}
+
+.formula-s{
+    font-size: 20;
+    font-style: italic;
+}
+
+.formula-s>sub{
+    font-style: normal;
+}
+
+.formula-s>sub2{
+    font-style: normal;
+    font-size: 20;
+}
+
+.container-button{
+padding-top: 5px;
+}
+
+#button-convert{
+    background-color: forestgreen;
+    color:whitesmoke;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#button-reset{
+    background-color: blue;
+    color:whitesmoke;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#button-reverse{
+    background-color: red;
+    color:whitesmoke;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#f-to-c {
+    display: none;
+} 
