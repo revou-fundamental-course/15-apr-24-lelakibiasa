@@ -19,10 +19,10 @@
         console.log(fahrenheit);
 
         let celcius = document.getElementById('celcius2');
-        celcius.value = ((fahrenheit) - 32) * 0.5556 ;
+        celcius.value = ((fahrenheit) - 32) * 5/9 ;
 
-        let rumus_c_to_f = document.getElementById('rumus-celcius-fahrenheit');
-        rumus_c_to_f.value =(fahrenheit) + " - 32 " + " x 5/9";
+        let rumus_f_to_c = document.getElementById('rumus-fahrenheit-celcius');
+        rumus_f_to_c.value =(fahrenheit) + " - 32 " + " x 5/9";
     }
 
     function reverse() {
@@ -50,5 +50,5 @@
     document.getElementById('fahrenheit').value = "";
     document.getElementById('fahrenheit2').value = "";
     document.getElementById('rumus-celcius-fahrenheit').value="";
-
+    document.getElementById('rumus-fahrenheit-celcius').value="";
     }
